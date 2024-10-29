@@ -1,0 +1,46 @@
+body{
+    background: rgb(208, 249, 250);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    background-color: rgb(114, 191, 194);
+    line-height: 2em;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 17px;
+    box-shadow: 0.4em 0.2em gray;
+    border: 2px solid black;
+}
+section{
+    margin: 3em 5% 0em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+div{
+    background-color: rgb(114, 191, 194);
+    border: 2px solid black;
+    padding-bottom: 100%;
+    box-shadow: 0.4em 0.2em gray;
+}
+
+
+@media only screen and (max-width: 600px){
+    section{
+        grid-template-columns: 1fr;
+    }
+    header{
+        line-height: 1em;
+        font-size: 1em;
+}
+}
+@media only screen and (max-width: 1024px) and (min-width: 601px){
+    section{
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 100%;
+    }
+    header{
+        line-height: 1.5em;
+        font-size: 1.5em;
+}
+}

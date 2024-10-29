@@ -1,28 +1,59 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body{
     background: rgb(208, 249, 250);
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header{
     background-color: rgb(114, 191, 194);
-    line-height: 2em;
-    font-size: 2em;
-    text-align: center;
     border-radius: 17px;
-    box-shadow: 0.4em 0.2em gray;
+    box-shadow: 0.4em 0.2em gray, 0 0 7px inset rgb(55, 91, 92);
     border: 2px solid black;
+    height: 6em;
+    margin-top: 1em;
 }
 section{
-    margin: 3em 5% 0em;
+    margin: 2em 5% 0em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
 }
 div{
-    background-color: rgb(114, 191, 194);
     border: 2px solid black;
-    padding-bottom: 100%;
-    box-shadow: 0.4em 0.2em gray;
+    box-shadow: 0.4em 0.4em gray;
 }
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+#refreshButton{
+    width: 4em;
+    height: 4em;
+    object-fit: contain;
+    float: right;
+    margin-right: 3em;
+}
+#autorenewButton{
+    object-fit: contain;
+}
+#outdoorPicFilter, #indoorPicFilter{
+    text-align: center;
+    font-weight: 600;
+    height: 4em;
+    margin-left: 3em;
+}
+button{
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    background-color: rgb(208, 249, 250);
+    border-radius: 9px;
+    border: 2px solid rgb(49, 49, 49);
+    box-shadow: 0 0 4px inset black;
+}
+
 
 
 @media only screen and (max-width: 600px){
@@ -30,9 +61,31 @@ div{
         grid-template-columns: 1fr;
     }
     header{
-        line-height: 1em;
-        font-size: 1em;
-}
+        background-color: rgb(114, 191, 194);
+        border-radius: 17px;
+        border: 2px solid black;
+        height: 4em;
+        margin-top: 1em;
+    }
+    #refreshButton{
+        width: 3em;
+        height: 3em;
+        object-fit: contain;
+        float: right;
+        margin-right: 1.5em;
+    }
+    #outdoorPicFilter, #indoorPicFilter{
+        text-align: center;
+        font-weight: 600;
+        height: 3em;
+        margin-left: 1.5em;
+    }
+    button{
+        margin-top: 0.7em;
+        margin-bottom: 0.5em;
+        background-color: rgb(208, 249, 250);
+        border-radius: 9px;
+    }
 }
 @media only screen and (max-width: 1024px) and (min-width: 601px){
     section{
@@ -40,7 +93,29 @@ div{
         padding-bottom: 100%;
     }
     header{
-        line-height: 1.5em;
-        font-size: 1.5em;
-}
+        background-color: rgb(114, 191, 194);
+        border-radius: 17px;
+        border: 2px solid black;
+        height: 4em;
+        margin-top: 1em;
+    }
+    #refreshButton{
+        width: 3em;
+        height: 3em;
+        object-fit: contain;
+        float: right;
+        margin-right: 1.5em;
+    }
+    #outdoorPicFilter, #indoorPicFilter{
+        text-align: center;
+        font-weight: 600;
+        height: 3em;
+        margin-left: 1.5em;
+    }
+    button{
+        margin-top: 0.7em;
+        margin-bottom: 0.5em;
+        background-color: rgb(208, 249, 250);
+        border-radius: 9px;
+    }
 }

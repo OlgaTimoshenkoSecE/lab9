@@ -1,18 +1,21 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="photogallery.css">
-        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header> header for filters</header>
-        <section>
-            <div>one</div>
-            <div>two</div>
-            <div>three</div>
-            <div>five</div>
-            <div>four</div>
-            <div>five</div>
-            <div>six</div>
+        <header>
+            <button type="button" id="outdoorPicFilter" class="filter">outdoors</button>
+            <button type="button" id="indoorPicFilter" class="filter">indoors</button>
+            <button type="button" id="refreshButton"><img src="autorenew.svg" id="autorenewButton"></button>
+        </header>
+        <section id="library">
+            <div id="box-one"><img src="first roll/turkey1.JPG" alt="No image here yet!" class="firstRoll"></div>
+            <div id="box-two"><img src="first roll/turkey2.JPG"  alt="No image here yet!" class="firstRoll"></div>
+            <div id="box-three"><img src="first roll/turkey3.JPG"  alt="No image here yet!" class="firstRoll"></div>
+            <div id="box-four"><img src="first roll/turkey4.JPG"  alt="No image here yet!" class="firstRoll"></div>
+            <div id="box-five"><img src="first roll/turkey5.JPG"  alt="No image here yet!" class="firstRoll"></div>
+            <div id="box-six"><img src="first roll/turkey6.JPG"  alt="No image here yet!" class="firstRoll"></div>
         </section>
         <script src="photogallery.js"></script>
     </body>

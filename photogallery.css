@@ -36,14 +36,19 @@ img {
     float: right;
     margin-right: 3em;
 }
+#refreshButton:active, #outdoorPicFilter:active, #indoorPicFilter:active{
+    background-color: rgb(55, 91, 92);
+}
 #autorenewButton{
     object-fit: contain;
 }
-#outdoorPicFilter, #indoorPicFilter{
+#filter-1, #filter-2{
     text-align: center;
     font-weight: 600;
     height: 4em;
     margin-left: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 button{
     margin-top: 1.5em;
@@ -52,6 +57,7 @@ button{
     border-radius: 9px;
     border: 2px solid rgb(49, 49, 49);
     box-shadow: 0 0 4px inset black;
+    color:black;
 }
 
 
@@ -74,7 +80,7 @@ button{
         float: right;
         margin-right: 1.5em;
     }
-    #outdoorPicFilter, #indoorPicFilter{
+    #filter-1, #filter-2{
         text-align: center;
         font-weight: 600;
         height: 3em;
@@ -106,7 +112,7 @@ button{
         float: right;
         margin-right: 1.5em;
     }
-    #outdoorPicFilter, #indoorPicFilter{
+    #filter-1, #filter-2{
         text-align: center;
         font-weight: 600;
         height: 3em;

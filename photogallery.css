@@ -37,13 +37,13 @@ img {
     float: right;
     margin-right: 3em;
 }
-#refreshButton:active, #outdoorPicFilter:active, #indoorPicFilter:active{
+#refreshButton:active, #filter:active{
     background-color: rgb(55, 91, 92);
 }
 #autorenewButton{
     object-fit: contain;
 }
-#filter-1, #filter-2{
+#filter{
     text-align: center;
     font-weight: 600;
     height: 4em;
@@ -79,22 +79,6 @@ article{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 600px){
     section{
         grid-template-columns: 1fr;
@@ -113,7 +97,7 @@ article{
         float: right;
         margin-right: 1.5em;
     }
-    #filter-1, #filter-2{
+    #filter{
         text-align: center;
         font-weight: 600;
         height: 3em;
@@ -148,7 +132,7 @@ article{
         float: right;
         margin-right: 1.5em;
     }
-    #filter-1, #filter-2{
+    #filter{
         text-align: center;
         font-weight: 600;
         height: 3em;

@@ -23,3 +23,25 @@ else {
     $("#filter-2").html(" no cat ");
 }   
 });
+
+
+$("#filter-1").on("click", function(){
+    let pics = document.querySelectorAll("div > img");
+    for (pic of pics){
+        if (pic.className === "firstRoll"){
+            if (pic.parentElement.id === "box-1" || pic.parentElement.id === "box-2" || pic.parentElement.id === "box-2"){
+                pic.hide();
+            }
+        }
+
+    }
+})
+
+$("div > img").on("click",function(event){
+    $("#picture").css("display","inline");
+    let picSource = event.target.getAttribute("src");
+    $("#screenView").attr("src",picSource);
+})
+$("#picture").on("click", function(){
+    $("#picture").css("display","none");
+})
